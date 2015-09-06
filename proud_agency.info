@@ -1,8 +1,8 @@
-name = Helm Agency
+name = Proud Agency
 description = Create filterable, searchable list of agencies
 core = 7.x
 version = 7.x-1.0-beta1
-package = Helm
+package = Proud
 dependencies[] = angular_media
 dependencies[] = ctools
 dependencies[] = entityreference

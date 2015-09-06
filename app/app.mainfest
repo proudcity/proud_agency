@@ -1,4 +1,4 @@
-name = Helm Agency
+name = Proud Agency
 description = Agencies can be granted autonomy through this app. It brings agencies into the new website umbrella but also empowers them with a modern communication tool. Additionally, this creates a consistent user experience for web visitors to know that they can find and communicate with the necessary staff regardless of the need.
 machine_name = helm_agency
 version = 7.x-1.0-beta1

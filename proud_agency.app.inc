@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Provides app info for Helm.
+ * Provides app info for Proud.
  */
 
 /**
