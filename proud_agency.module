@@ -5,3 +5,16 @@
  */
 
 include_once 'proud_agency.features.inc';
+
+
+/**
+* Implements hook_entity_info_alter().
+*/
+function proud_agency_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['contact'] = array(
+    'label' => t('Contact info'),
+    'custom settings' => TRUE,
+  );
+
+  dpm($entity_info);
+}
