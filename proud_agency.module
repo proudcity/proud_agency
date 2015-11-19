@@ -15,5 +15,26 @@ function proud_agency_entity_info_alter(&$entity_info) {
     'label' => t('Contact info'),
     'custom settings' => TRUE,
   );
+}
 
+
+
+
+/**
+ * Implements hook_node_update().
+ * Save social user updates to Social Wall app
+ */
+function proud_agency_node_update($node) {
+  if ($node->type == 'agency' && module_exists('proud_aggregator')) {
+    $json = proud_aggregator_json_field($node->field_agency_social, $node->title);
+    proud_aggregator_api('/user/update', $json);
+  }
+}
+
+
+/**
+ * Implements hook_node_insert().
+ */
+function proud_agency_node_insert($node) {
+  return proud_agency_node_update($node);
 }
